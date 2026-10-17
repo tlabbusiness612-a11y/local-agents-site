@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | Local Agents</title>
+<meta name="description" content="Local Agents のプライバシーポリシー。データは端末の中に保存し、クラウドAIは同意したときだけ使います。">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img src="icon.png" alt="">
+    <a class="name" href="index.html">Local Agents</a>
+    <nav>
+      <a href="index.html">アプリ</a>
+      <a href="support.html">サポート</a>
+      <a href="privacy.html" aria-current="page">プライバシー</a>
+    </nav>
+  </header>
+
+  <h1>プライバシーポリシー</h1>
+  <p class="lead">Local Agents（以下「本アプリ」）が扱う情報と、その扱い方を説明します。アプリの中の「設定 → プライバシーとクラウドAIへの送信 → プライバシーポリシー」でも同じ内容を読めます。</p>
+
+  <h2>1. 基本：端末の中で完結します</h2>
+  <p>会社・社員・会話・成果物・画像・設定は、すべてあなたの端末の中（本アプリ専用の領域）に保存します。本アプリの開発者はサーバーを持たず、あなたのデータを受け取りません。アカウント登録もありません。iPhone・iPadのAIを使うときは、AIの処理も端末の中だけで行います。</p>
+
+  <h2>2. 集めない情報</h2>
+  <ul>
+    <li>広告、アクセス解析、トラッキングは行いません。</li>
+    <li>他社の広告・分析SDKは入っていません。</li>
+    <li>クラッシュ情報などを自動で開発者に送ることはありません（iPhoneの設定で「Appデベロッパと共有」をオンにしている場合に、Appleを通じて匿名の診断情報が届くことがあります）。</li>
+  </ul>
+
+  <h2>3. クラウドAIを選んだときだけ送る情報</h2>
+  <p>あなたが ChatGPT（OpenAI）・Claude（Anthropic）・Gemini（Google）・Grok（xAI）の APIキーを登録し、アプリに表示される説明を読んで送信に同意したときだけ、次の内容をその会社の API へ直接送ります。本アプリの開発者のサーバーは通りません。</p>
+  <ul>
+    <li>そのAIを指名した社員・会社の分の、依頼・メッセージ・会話の流れ</li>
+    <li>仕事の仕様や途中の成果、社員の名前・性格・指示、これまでの学び</li>
+    <li>Gemini で画像を作るときは、画像の説明文（プロンプト）</li>
+    <li>「しっかり」調べる仕事では、AIの会社がその内容をもとにWeb検索を行います</li>
+  </ul>
+  <p>「おまかせ」の仕事、iPhoneのAI・PCのAIを使う社員の分、体験モードの内容は、AIの会社へ送りません。送った内容は、その会社のプライバシーポリシーと利用規約に従って扱われます。</p>
+  <table>
+    <tr><th>送り先</th><th>プライバシーポリシー</th></tr>
+    <tr><td>OpenAI（ChatGPT）</td><td><a href="https://openai.com/policies/privacy-policy/">openai.com/policies/privacy-policy</a></td></tr>
+    <tr><td>Anthropic（Claude）</td><td><a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a></td></tr>
+    <tr><td>Google（Gemini）</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a><br>Gemini API 追加利用規約：<a href="https://ai.google.dev/gemini-api/terms">ai.google.dev/gemini-api/terms</a>（無料枠では、送った内容がサービスの改善に使われ、人が確認することがあります）</td></tr>
+    <tr><td>xAI（Grok）</td><td><a href="https://x.ai/legal/privacy-policy">x.ai/legal/privacy-policy</a></td></tr>
+  </table>
+
+  <h2>4. APIキー</h2>
+  <p>APIキーとPC連携のキーは、端末のキーチェーンにだけ保存します。その会社への接続にだけ使い、会社のデータ・ほかの端末・開発者には渡しません。</p>
+
+  <h2>5. そのほかの通信</h2>
+  <ul>
+    <li><strong>AIモデル・画像モデル・声のダウンロード：</strong>あなたが選んだときに Hugging Face（<a href="https://huggingface.co/privacy">huggingface.co/privacy</a>）からファイルを取得します。送るのは通常のダウンロードと同じ情報（IPアドレスなど）だけです。</li>
+    <li><strong>PC連携：</strong>あなたが入力したPC（LM Studio・Ollama など）へ、同じネットワークの中で依頼を送ります。</li>
+    <li><strong>端末連携：</strong>あなたが接続コードで認証した近くの iPhone・iPad へ、暗号化した通信で依頼と答えを送ります。この機能のためにローカルネットワークへのアクセスを求めます。</li>
+    <li><strong>写真：</strong>作った画像を「写真」に保存するときだけ、追加のための許可を求めます。写真を読み取ることはありません。</li>
+    <li>AIが作ったWebアプリは、インターネットへの通信を止めた状態で動かします。</li>
+  </ul>
+
+  <h2>6. 保存期間と削除</h2>
+  <p>データは端末に残り、あなたが消すまで保存されます。会話・会社・社員・ダウンロードしたAIはアプリの中で削除でき、APIキーは「設定 → クラウドAI（APIキー）」で削除できます。本アプリを削除すると、端末内のデータはすべて消えます。AIの会社へ送った内容の保存期間と削除方法は、各社のポリシーをご確認ください。</p>
+
+  <h2>7. 同意の取り消し</h2>
+  <p>クラウドAIへの送信の同意は、「設定 → プライバシーとクラウドAIへの送信」でいつでも取り消せます。取り消した後は、そのAIへは何も送りません。</p>
+
+  <h2>8. 子どもの情報</h2>
+  <p>本アプリは、子どもから意図的に個人情報を集めることはありません。</p>
+
+  <h2>9. 第三者への提供</h2>
+  <p>開発者はあなたのデータを受け取らないため、第三者に提供・販売することはありません。クラウドAIへの送信は、上の3のとおり、あなたの同意にもとづいてあなたのAPIキーで直接行われます。</p>
+
+  <h2>10. このポリシーの変更</h2>
+  <p>内容を変えるときは、このページとアプリの更新でお知らせします。</p>
+
+  <h2>11. お問い合わせ</h2>
+  <p><a href="mailto:support@tower-lab.com">support@tower-lab.com</a></p>
+
+  <p class="lead">制定日：2026年10月16日</p>
+
+  <footer>
+    <p><a href="index.html">Local Agents</a> · <a href="support.html">サポート</a></p>
+  </footer>
+</div>
+</body>
+</html>
